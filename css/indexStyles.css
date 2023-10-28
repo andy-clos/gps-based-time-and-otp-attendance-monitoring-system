@@ -1,0 +1,181 @@
+/*
+INTEGRATED PROJECT (DFT 50114) GPS BASED TIME AND OTP ATTENDANCE MONITORING SYSTEM
+
+LOGIN PAGE STYLE (CSS)
+
+BY  : ANDYCLOS A/L BOON MEE (01DDT20F1007)
+      OOI YONG HERN (01DDT20F1042)
+      CHIN LI XIN (01DDT20F1047)
+*/
+
+body {
+    background-color: white;
+    background: url(bg.png) no-repeat center center;
+    background-size: cover;
+    background-position: fixed;
+    overflow: hidden;
+}
+
+/*^^^--------------------------------body element--------------------------------------^^^*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+/*^^^--------------------------------main element--------------------------------------^^^*/
+
+.datetime {
+    text-transform: uppercase;
+    font-family: "system-ui";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*^^^--------------------------------real time clock and date element element--------------------------------------^^^*/
+
+.form_class {
+    background-color: rgb(238, 236, 234);
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 8px;
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.icon {
+    display: block;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'system-ui';
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 1px;
+    background-color: black;
+}
+
+.form_div {
+    text-transform: uppercase;
+}
+
+.form_div>label {
+    margin-top: 50px;
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+
+.field_class {
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    background-color: rgb(238, 236, 234);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#login,
+#user {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #e9e7e7;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+#fpss,
+#admin {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #e9e7e7;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+#login:hover,
+#user:hover {
+    background-color: rgb(219, 209, 200);
+}
+
+#fpss:hover,
+#admin:hover {
+    background-color: rgb(219, 209, 200);
+}
+
+/*^^^--------------------------------whole login form element--------------------------------------^^^*/
+
+@media screen and (max-width: 800px) {    
+    .form_class {
+        width: 300px;
+        
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 60px;
+    }
+}

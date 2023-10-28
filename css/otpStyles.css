@@ -1,0 +1,203 @@
+/*
+INTEGRATED PROJECT (DFT 50114) GPS BASED TIME AND OTP ATTENDANCE MONITORING SYSTEM
+
+OTP PAGE STYLE (CSS)
+
+BY  : ANDYCLOS A/L BOON MEE (01DDT20F1007)
+      OOI YONG HERN (01DDT20F1042)
+      CHIN LI XIN (01DDT20F1047)
+*/
+
+body {
+    background-color: white;
+    background: url(bg.png) no-repeat center center;
+    background-size: cover;
+    background-position: fixed;
+    overflow: hidden;
+}
+
+
+/*^^^--------------------------------body element--------------------------------------^^^*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+/*^^^--------------------------------main element--------------------------------------^^^*/
+
+.datetime {
+    text-transform: uppercase;
+    font-family: "system-ui";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*^^^--------------------------------real time clock and date element element--------------------------------------^^^*/
+
+.form_class {
+    background-color: rgb(238, 236, 234);
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 8px;
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+h1,
+p {
+    font-family: 'system-ui';
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin-top: -0px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.form_div {
+    text-transform: uppercase;
+}
+
+.field_class {
+    display: block;
+    background-color: aqua;
+    width: 450px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    margin: auto;
+    font-family: 'system-ui';
+    font-size: 2.0rem;
+    letter-spacing: 40px;
+    background-color: rgb(238, 236, 234);
+}
+
+::placeholder {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+#resend {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #e9e7e7;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+#verify {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #e9e7e7;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+#resend:hover {
+    background-color: rgb(219, 209, 200);
+}
+
+#verify:hover {
+    background-color: rgb(219, 209, 200);
+}
+
+/*^^^--------------------------------whole login form element--------------------------------------^^^*/
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow: visible;
+    }
+
+    main {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .form_class {
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 60px;
+    }
+
+    .datetime {
+        margin-top: 70px;
+    }
+
+    .date {
+        font-size: 21px;
+    }
+
+    .time {
+        font-size: 65px;
+    }
+
+    .field_class {
+        width: 300px;
+        letter-spacing: 30px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}

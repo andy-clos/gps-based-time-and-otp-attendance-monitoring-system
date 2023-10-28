@@ -1,0 +1,39 @@
+.pw-meter .pw-strength{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    background: #f2f2f2;
+    display: none;
+    border-radius: 100px;
+}
+
+.pw-meter .pw-strength span:nth-child(1){
+    position: relative;
+    font-size: 20px;
+    color: #111;
+    z-index: 2;
+    font-weight: 600;
+}
+
+.pw-meter .pw-strength span:nth-child(2){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    border-radius: 100px;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+}
+
+.tooltips{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+    border-radius: 100px;
+}

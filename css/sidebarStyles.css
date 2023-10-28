@@ -1,0 +1,97 @@
+/*
+INTEGRATED PROJECT (DFT 50114) GPS BASED TIME AND OTP ATTENDANCE MONITORING SYSTEM
+
+SIDEBAR STYLE (CSS)
+
+BY  : ANDYCLOS A/L BOON MEE (01DDT20F1007)
+      OOI YONG HERN (01DDT20F1042)
+      CHIN LI XIN (01DDT20F1047)
+*/
+
+body {
+  background-color: rgb(236, 230, 223);
+}
+
+.datetime {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -20px;
+  text-transform: uppercase;
+}
+
+.date {
+  text-align: center;
+  font-size: 12px;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#side_nav {
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  background: rgb(139, 135, 130);
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.navbar {
+  background: rgb(165, 161, 155);
+}
+
+.header {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.info {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+hr.h-color {
+  background: white;
+}
+
+.sidebar li.active {
+  background: white;
+  border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+  color: #000;
+}
+
+.sidebar li a {
+  color: white;
+}
+
+@media(max-width: 767px) {
+  #side_nav {
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+
+  #side_nav.active {
+    margin-left: 0;
+  }
+}
